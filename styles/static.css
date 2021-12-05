@@ -1,0 +1,15 @@
+#profile1 {
+  background: linear-gradient(135deg, rgba(8,4,79,1) 0%, rgba(9,9,121,1) 78%);
+}
+#profile2 {
+  background: linear-gradient(135deg, rgba(98,76,140,1) 0%, rgba(204,96,154,1) 78%);
+}
+#profile3{
+  background: linear-gradient(135deg, rgba(8,70,109,1) 0%, rgba(1,175,173,1) 78%);
+}
+#profile4{
+  background: linear-gradient(135deg, rgba(118,85,94,1) 20%, rgba(196,132,79,1) 78%);
+}
+#profile5{
+  background: linear-gradient(90deg, rgba(25,25,112,1) 0%, rgba(30,170,193,1) 100%);
+}

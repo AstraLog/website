@@ -1,0 +1,106 @@
+input[type='checkbox'] {
+  display: none;
+}
+
+.wrap-collapsible {
+  width: 100%;
+}
+.wrap-collapsible h2{
+  font-size: 16pt;
+}
+.wrap-collapsible p{
+  
+  font-size: 12pt;
+}
+
+.lbl-toggle:hover {
+  color: #FFF;
+  transition: transform .5s;
+}
+
+.lbl-toggle {
+  height: 80px;
+  color: #DDD;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+.lbl-toggle .label-inner{
+  display: flex;
+  height: 80px;
+}
+.lbl-toggle .label-inner div{
+  flex: 1;
+}
+.lbl-toggle .label-inner img{
+  width: 400px;
+  opacity: 1;
+  transition: opacity 0.5s, filter .2s;
+  filter: saturate(0) contrast(1.5);
+}
+.lbl-toggle:hover .label-inner img{
+  filter: saturate(1) contrast(1);
+}
+.lbl-toggle .label-inner p{
+  width: 375px;
+  margin-left: 75px;
+  line-height: 80px;
+  transition: transform 0.5s;
+  font-size: 25pt;
+  letter-spacing: 7px;
+}
+
+.toggle:checked+.lbl-toggle .label-inner img{
+  opacity: 0;
+}
+.toggle:checked+.lbl-toggle .label-inner p{
+  transform: translatex(-475px);
+}
+
+.collapsible-content {
+  height: 0px;
+  overflow: hidden;
+  transition: height .5s;
+}
+
+.toggle:checked+.lbl-toggle+.collapsible-content {
+  height: 500px;
+}
+
+
+
+.lbl-toggle .label-secondary{
+  width: 1000px;
+  margin: 0 auto;
+  height: 80px;
+  margin-top: -80px;
+}
+.lbl-toggle .label-secondary .dynamic-title{
+  margin-left: 70px;
+  width: 400px;
+  height: 80px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all .5s;
+  opacity: 0;
+  color: #FFF;
+}
+.toggle:checked+.lbl-toggle .label-secondary .dynamic-title {
+  opacity: 1;
+  transform: translatex(460px);
+}
+
+
+.content-inner {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+.profile-image, .profile-text{
+  flex: 1;
+  height: 500px;
+}
+.profile-text{
+  margin-left: 20px;
+}

@@ -1,0 +1,28 @@
+.smSection {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 20px;
+}
+.smSection .subContainer{
+  flex: 1;
+  position: relative;
+}
+.smSection .subContainer a{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 70px;
+}
+.smSection .sm-image-container {
+  width: 70px;
+  height: 70px;
+}
+.smSection .sm-image-container img{
+  width: 100%;
+  display: block;
+}
+.smSection p{
+  margin-top: 10px;
+  text-align: center;
+}

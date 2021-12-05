@@ -1,0 +1,30 @@
+.overviewSection{
+  margin: 0 auto;
+  width: 1000px;
+  padding: 20px 0;
+  overflow: hidden;
+}
+.overviewSection h1 {
+  text-align: center;
+}
+.overviewSection .subContainer{
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  line-height: 32px;
+}
+.overviewSection .subContainer .imageContainer {
+  flex: 25;
+}
+.overviewSection .subContainer .imageContainer img {
+  width: 100%;
+  opacity: .75;
+}
+.overviewSection .subContainer .spacer{
+  flex: 1;
+}
+.overviewSection .subContainer p{
+  font-size: 16pt;
+  flex: 25;
+  margin-right: -200px;
+}
